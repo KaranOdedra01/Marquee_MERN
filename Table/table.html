@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        th,
+        td {
+            border: 2px solid black;
+        }
+        td{
+            padding: 10px;
+        }
+        th{
+            background-color: grey;
+            padding: 10px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>This Table having an Employee Details</caption>
+        <colgroup>
+        <col style="background-color: aqua;">
+        <col style="background-color: brown;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Emp_code</th>
+                <th>Emp_Name</th>
+                <th>Job_Title</th>
+                <th>Salary(LPA)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><center>911</center></td>
+                <td>Zoya Shaikh</td>
+                <td>Developer</td>
+                <td>3.6</td>
+            </tr>
+            <tr>
+                <td><center>912</center></td>
+                <td>Lisa Dev</td>
+                <td>Tester</td>
+                <td rowspan="2">5.2</td>
+            </tr>
+            <tr>
+                <td><center>913</center></td>
+                <td>Deepak Jadeja</td>
+                <td>Developer</td>
+                <!-- <td>5.2</td> -->
+            </tr>
+            <tr>
+                <td><center>914</center></td>
+                <td>Aiti Yewale</td>
+                <td>Digital Marketing</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td><center>915</center></td>
+                <td>Simran Rao</td>
+                <td>HR</td>
+                <td>5.6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="text-align: center;">
+               <td colspan="4"> This is Table Footer </td>
+            </tr>
+        </tfoot>
+            </table>
+
+</body>
+
+</html>
