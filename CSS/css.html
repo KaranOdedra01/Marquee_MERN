@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Intro to css</title>
+    <style>
+        ul {
+            color: aqua;
+        }
+
+        .formatting {
+            font-family: cursive;
+            background-color: bisque;
+        }
+
+        h3 {
+            background-color: pink;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        p {
+            color: black;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        div > p{
+            color: red;
+        }
+        input[name = "Password"]{
+            background-color: red;
+        }
+        input[name = "Username"]{
+            background-color: blue;
+        }
+       input[placeholder]{
+        color:black;
+       }
+    </style>
+
+</head>
+
+<body>
+    <h3>Types of CSS:- </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde doloribus a! Fuga dignissimos dolorem velit
+        mollitia provident, magni consequuntur doloremque maiores debitis quaerat autem porro ducimus quis ullam cum?
+    </p>
+    <ul>
+        <li class="formatting" style="color: blue;">Inline</li>
+        <li class="formatting" style="color: rgb(190, 114, 114);">Internal</li>
+        <li class="formatting" style="color: red;">External</li>
+    </ul>
+    <section>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rem consectetur voluptatem tempore,
+                mollitia ipsa neque facilis. Iste totam unde ipsam.</p>
+        </div>
+    </section>
+    <section>
+        <form action="">
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username" placeholder="Enter Username">
+            <br>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" id="Password" placeholder="Enter Password">
+        </form>
+    </section>
+</body>
+
+</html>
