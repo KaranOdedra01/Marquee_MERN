@@ -18,13 +18,14 @@
     type="image/x-icon" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap');
+
     .centralized {
       text-align: center;
       color: black;
     }
 
     p {
-       font-family: "Montenegrin Gothic One", serif;
+      font-family: "Montenegrin Gothic One", serif;
       color: green;
     }
 
@@ -37,6 +38,24 @@
       background-color: green;
 
     }
+
+    #navbar-top {
+      position: sticky;
+      top: 10px;
+      background-color: aqua;
+    }
+    #nav-bar{
+      display: inline-flex;
+    }
+    #image{
+      position: fixed;
+      bottom: 10px;
+      right : 10px;
+      border-radius: 40px;
+    }
+    a{
+      padding: 5px 10px;
+    }
   </style>
 </head>
 
@@ -44,7 +63,7 @@
   <!-- Top Level Information -->
 
   <header id="navbar-top">
-    <nav>
+    <nav id="nav-bar">
       <a href="#sub-heading-1">1. Topics</a> <br />
       <a href="#sub-heading-2">2. Topics</a> <br />
       <a href="#sub-heading-3">3. Topics</a> <br />
@@ -245,6 +264,10 @@
       </div>
     </div>
   </main>
+  <section>
+    <img id = "image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_XxqALHPYll8bvJRjpob__AGnIqVDJwa-lqdaamoQcA&s=10"
+      alt="" height="80px" width = "80px" >
+  </section>
 
   <footer></footer>
 </body>
