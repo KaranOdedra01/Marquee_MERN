@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-top {
+            justify-content: space-between;
+            display: flex;
+            margin-right: 20%;
+            
+        }
+
+        body {
+            margin-left: 150px;
+        }
+
+        button {
+            border: none;
+
+            margin-right: 10px;
+            border-radius: 10px;
+            width: 130px;
+            height: 50px;
+        }
+
+        #Flipkart {
+            background-color: yellow;
+        }
+
+        #Travel {
+            background-color: #F0F0F0;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        input {
+            margin-top: 10px;
+            width: 400px;
+            gap: 5px;
+            border: none;
+            outline: none;
+            font-size: large;
+            margin: 5px 0px;
+        }
+
+        .search-bar {
+            border: 2px solid rgb(67, 141, 201);
+            border-radius: 10px;
+            outline: none;
+            margin-top: 5px;
+            width: 75%;
+            justify-content: space-between;
+        }
+
+        .nav-middle {
+            justify-content: space-between;
+            display: flex;
+            margin-right: 150px;
+            gap: 5px;
+            align-items: center;
+        }
+
+        #select {
+            gap: 5px;
+        }
+
+        .dropdown {
+            display: flex;
+            gap: 15px;
+        }
+
+        .items {
+            padding: 2px 0px 0px 8px;
+            height: 36px;
+            width: px;
+            background-color: #FFFFFF;
+        }
+
+        .nav-bottom {
+            margin-top: 10px;
+            margin-right: 10%;
+            display: flex;
+            /* width: 150px; */
+
+            gap: 5px;
+            overflow-x: scroll;
+        }
+
+
+
+        .sp {
+            /* height: 250px; */
+            display: flex;
+            height: 75px;
+            justify-content: center;
+            flex-direction: column;
+            /* width: 200px; */
+            /* background-color: aqua; */
+            min-width: 70px;
+        }
+
+        img {
+            height: 30px;
+
+        }
+
+        .main {
+            margin-top: 20px;
+            width: 88%;
+            display: flex;
+            gap: 20px;
+            /* justify-content: space-between; */
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .First>img {
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        #pic1 {
+            flex-grow: 2;
+        }
+
+        #pic2 {
+            flex-grow: 2;
+        }
+
+        #pic3 {
+            flex-grow: 1;
+        }
+
+        #home_decore_arrow_button {
+            height: 40px;
+            width: 60px;
+            border-radius: 30px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .home_decore_header {
+            padding: 2px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .home_decore{
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #212121;
+            color: #FFFFFF;
+            margin-right: 10%;
+        }
+
+        .home_decore_product_card {
+            border: 5px solid;
+            width: 250px;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+
+        .home_decore_product_card_img>img {
+            margin-top: 15px;
+            height: 200px;
+        }
+
+        .home_decore_product {
+            background-color: #FFFFFF;
+            display: flex;
+            gap: 20px;
+        }
+
+        .home_decore_product_card_content {
+            margin-left: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="nav-top">
+            <section class="buttons">
+                <a href="">
+                    <button id="Flipkart">
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/52/44/image/d2ecfddf891a3922.png?q=60"
+                            alt="">
+
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/92/36/image/31f7e3af490c225f.png?q=60" alt=""
+                            style="height: 25px; width: 50px;">
+                    </button>
+                </a>
+                <a href="">
+                    <button id="Travel">
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/58/44/image/7ab4040af860941d.png?q=60"
+                            alt="">
+                        <img src="https://rukminim2.flixcart.com/fk-p-flap/72/36/image/5a9ff48eef96b876.png?q=60" alt=""
+                            style="height: 25px; width: 50px;">
+                    </button>
+                </a>
+            </section>
+            <section class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p> Location not set <span style="color: rgb(10, 123, 215);"> Select
+                        delivary location > </span></p>
+
+            </section>
+        </section>
+        <section class="nav-middle">
+            <section class="search-bar">
+                <i class="fa-brands fa-sistrix" style="font-size: 20px;"></i>
+
+                <input type="text" name="search" id="" placeholder="Search For Products, Brands and More">
+            </section>
+            <section class="dropdown">
+                <i class="fa-regular fa-circle-user"></i>Login
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K"
+                    alt="" style="height: 15px;">
+
+                More
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K"
+                    alt="" style="height: 15px;">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+                </i>Cart
+            </section>
+        </section>
+        <div style="background-color: rgb(223, 215, 215); height: 2px; width:88%;margin-top: 5px;">
+        </div>
+        <section class="nav-bottom">
+
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/all.svg" alt="">
+                <p> For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/fashion.svg" alt="">
+                <p>Fashion </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/mobiles.svg" alt="">
+                <p>Mobiles</p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/electronics.svg" alt="">
+                <p>Electronic</p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/electronics.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/beauty.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/furniture.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/tv.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/toy.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/food.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/auto-acc.svg" alt="">
+                <p>For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/sport.svg" alt="">
+                <p> For You </p>
+            </span>
+            <span class="sp">
+                <img src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/books.svg" alt="">
+                <p>For You </p>
+            </span>
+
+
+
+
+
+        </section>
+        <div style="background-color: rgb(223, 215, 215); height: 2px; width: 88%;margin-top: 5px; ">
+        </div>
+
+    </header>
+    <main>
+        <section class="main">
+            <section class="First" id="pic1">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/845ae741dc89a2a9.jpg?q=200" alt="">
+            </section>
+
+            <section class="First" id="pic2">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/460/224/image/6bc02cf5ef009d79.png?q=200" alt="">
+            </section>
+
+            <section class="First" id="pic3">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/b4e1d781da4082bf.png?q=60" alt="">
+            </section>
+        </section>
+
+
+        <section class="home_decore">
+            <section class="home_decore_header">
+                <h2>Home Decor and Furnishing</h2>
+                <button id="home_decore_arrow_button">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </section>
+            <section class="home_decore_product">
+                <section class="home_decore_product_card">
+                    <section class="home_decore_product_card_img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shopsy-face-wash/i/r/u/liquid-300-foaming-for-oil-and-pimples-2x150ml-clean-clear-original-imah2j463h8rsehr.jpeg?q=90"
+                            alt="">
+                    </section>
+                    <section class="home_decore_product_card_content">
+                        <h3>Key Holders</h3>
+                        <h3>
+                            Min 50% Off
+                        </h3>
+                    </section>
+                </section>
+                <section class="home_decore_product_card">
+                    <section class="home_decore_product_card_img">
+                    <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shopsy-face-wash/i/r/u/liquid-300-foaming-for-oil-and-pimples-2x150ml-clean-clear-original-imah2j463h8rsehr.jpeg?q=90"
+                        alt="">
+                        </section>
+                    <section class="home_decore_product_card_content">
+                        <h3>Key Holders</h3>
+                        <h3>
+                            Min 50% Off
+                        </h3>
+                    </section>
+                </section>
+                <section class="home_decore_product_card">
+                    <section class="home_decore_product_card_img">
+                    <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shopsy-face-wash/i/r/u/liquid-300-foaming-for-oil-and-pimples-2x150ml-clean-clear-original-imah2j463h8rsehr.jpeg?q=90"
+                        alt="">
+                        </section>
+                    <section class="home_decore_product_card_content">
+                        <h3>Key Holders</h3>
+                        <h3>
+                            Min 50% Off
+                        </h3>
+                    </section>
+                </section>
+                <section class="home_decore_product_card">
+                    <section class="home_decore_product_card_img">
+                    <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shopsy-face-wash/i/r/u/liquid-300-foaming-for-oil-and-pimples-2x150ml-clean-clear-original-imah2j463h8rsehr.jpeg?q=90"
+                        alt="">
+                        </section>
+                    <section class="home_decore_product_card_content">
+                        <h3>Key Holders</h3>
+                        <h3>
+                            Min 50% Off
+                        </h3>
+                    </section>
+                </section>
+                <section class="home_decore_product_card">
+                    <section class="home_decore_product_card_img">
+                    <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shopsy-face-wash/i/r/u/liquid-300-foaming-for-oil-and-pimples-2x150ml-clean-clear-original-imah2j463h8rsehr.jpeg?q=90"
+                        alt="">
+                        </section>
+                    <section class="home_decore_product_card_content">
+                        <h3>Key Holders</h3>
+                        <h3>
+                            Min 50% Off
+                        </h3>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
